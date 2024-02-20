@@ -41,5 +41,11 @@ public class Devis implements Serializable {
     @OneToOne
     Formule formule;
 
+    @ManyToOne
+    Souscripteur souscripteur;
+
+    @OneToOne
+    Signature signature;
+
 
 }
